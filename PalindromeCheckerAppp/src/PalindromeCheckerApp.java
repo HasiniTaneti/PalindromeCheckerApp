@@ -1,17 +1,21 @@
-/*
- *Application entry point.
- *
- * This is the first method executed by the JVM
- * when the program starts
- *
- * @author Developer
- * @version 1.0
- */
+// version 2.0
+// UC2 : Hardcoded Palindrome Validation
 
 public class PalindromeCheckerApp {
-    public static void main(String[] args){
-        System.out.println("Welcome to palindrome checker management system");
-        System.out.println("Version : 1.0");
-        System.out.println("System initialized successfully");
+
+    public static void main(String[] args) {
+
+        String input = "madan";   // hardcoded string
+        boolean isPalindrome = true;
+
+        for (int i = 0; i < input.length() / 2; i++) {
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        System.out.println("Input text: " + input);
+        System.out.println("Is it a Palindrome?: " + isPalindrome);
     }
 }
