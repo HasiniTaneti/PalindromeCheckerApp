@@ -1,0 +1,17 @@
+/*
+ *Application entry point.
+ *
+ * This is the first method executed by the JVM
+ * when the program starts
+ *
+ * @author Developer
+ * @version 1.0
+ */
+
+public class PalindromeCheckerApp {
+    public static void main(String[] args){
+        System.out.println("Welcome to palindrome checker management system");
+        System.out.println("Version : 1.0");
+        System.out.println("System initialized successfully");
+    }
+}
