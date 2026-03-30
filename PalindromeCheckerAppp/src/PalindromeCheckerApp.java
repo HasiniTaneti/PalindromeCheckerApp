@@ -1,21 +1,20 @@
-// version 2.0
-// UC2 : Hardcoded Palindrome Validation
-
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "madan";   // hardcoded string
-        boolean isPalindrome = true;
+        String input = "madam";
+        String reversed = "";
 
-        for (int i = 0; i < input.length() / 2; i++) {
-            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
-                isPalindrome = false;
-                break;
-            }
+        // reverse the string using for loop
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed = reversed + input.charAt(i);
         }
 
+        // compare original and reversed string
+        boolean isPalindrome = input.equals(reversed);
+
         System.out.println("Input text: " + input);
+        System.out.println("Reversed text: " + reversed);
         System.out.println("Is it a Palindrome?: " + isPalindrome);
     }
 }
